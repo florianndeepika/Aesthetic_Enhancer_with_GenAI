@@ -1,0 +1,5 @@
+streamlit
+google-generativeai
+python-dotenv
+langchain
+streamlit_extras==0.3.5
