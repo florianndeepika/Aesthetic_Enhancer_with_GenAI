@@ -59,7 +59,8 @@ Aesthetic Enhancer is a Python-based project that utilizes a Large Language Mode
 
 ## Image
 
-<img width="1187" alt="image" src="<img width="1240" alt="image" src="https://github.com/florianndeepika/Aesthetic_Enhancer_with_GenAI/assets/63796480/219b1db9-6c80-497b-b317-8435c537cd15">
+<img width="1187" alt="image" src="<img width="1240" alt="image" src="<img width="1024" alt="image" src="https://github.com/florianndeepika/Aesthetic_Enhancer_with_GenAI/assets/63796480/3c09da01-54bf-4204-a843-195573fe9baa">
+">
 ">
 
 ## Acknowledgments
