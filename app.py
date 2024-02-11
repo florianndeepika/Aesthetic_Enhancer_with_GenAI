@@ -26,7 +26,7 @@ with st.sidebar:
 
     ''')
     #add_vertical_space(1)
-    st.write('Made with ❤️')
+    st.write('Made with ❤️ by Floriann (Jan-2024)')
     
 #function to load the google gemini pro vision api and get response
 def get_gem_response(input, image, prompt):
@@ -66,7 +66,7 @@ submit=st.button("Submit")
 
 input_prompt="""
 You are an expert in interior designing and aesthetics. 
-Take note what is the preference of the user is and 
+Take note what is the preference of the user is from the input text and 
 describe how the aesthetics in the image looks and
 what can be changed to enhance the living space in the house 
 of the image as per the user taste and expectations.
