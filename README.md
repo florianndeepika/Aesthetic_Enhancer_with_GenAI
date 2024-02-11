@@ -63,5 +63,5 @@ Aesthetic Enhancer is a Python-based project that utilizes a Large Language Mode
 
 ## Acknowledgments
 
-- This model was with reference to https://github.com/krishnaik06/Google-Gemini-Crash-Course
+- Special thanks to https://github.com/krishnaik06/Google-Gemini-Crash-Course
 

@@ -56,7 +56,7 @@ def input_image_setup(uploaded_file):
 st.header("Aesthetics Enhancer App")
 
 input=st.text_input("Enter your question here: ",key="input")
-uploaded_file = st.file_uploader("Choose an image..", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("Upload an image and click submit..", type=["jpg", "jpeg", "png"])
 image=""   
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
