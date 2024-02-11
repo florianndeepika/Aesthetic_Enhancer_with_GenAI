@@ -1,5 +1,5 @@
 # Aesthetic Enhancer with Google Generative AI
-#### PS : This app will work only in region where Google Generative AI is enabled.
+PS : This app will work only in region where Google Generative AI is enabled.
 
 ## Overview
 
@@ -57,9 +57,8 @@ Aesthetic Enhancer is a Python-based project that utilizes a Large Language Mode
 
 4. Upload an image of your living space and follow the prompts to receive enhancement suggestions.
 
-## Demo
+## Image
 
-[Include a link or GIF showcasing the user interface and how the model provides suggestions.]
 <img width="1187" alt="image" src="https://github.com/florianndeepika/Aesthetic_Enhancer_with_GenAI/assets/63796480/f96b9fd7-8556-499e-83bf-9afb998f77ce">
 
 ## Acknowledgments
