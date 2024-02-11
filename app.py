@@ -9,6 +9,10 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
+headers = {
+    "authorization": st.secrets["auth_token"]
+}
+
 # Sidebar contents
 with st.sidebar:
     st.title('Aesthetics Enhancer 🏡')
