@@ -9,9 +9,8 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
-headers = {
-    "authorization": st.secrets["GOOGLE_API_KEY"]
-}
+# Everything is accessible via the st.secrets dict:
+st.write("GOOGLE_API_KEY:", st.secrets["GOOGLE_API_KEY"])
 
 # Sidebar contents
 with st.sidebar:
