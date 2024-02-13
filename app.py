@@ -68,11 +68,11 @@ submit=st.button("Submit")
 st.write('Note : The Streamlit is an open-source software which collects user data for summary statistics. ')
 
 input_prompt="""
-You are an expert in interior designing and aesthetics. 
-Take note what is the preference of the user is from the input text and 
+Act as an expert in interior designing and aesthetics. 
+Take note of what the preference from input text is and 
 describe how the interior designing and aesthetics in the image looks and
-what can be changed to enhance the living space in the house 
-of the image as per the user taste and expectations.
+what can be changed to enhance the living space in the house to look more lively
+as per the user taste and expectations.
 """
 ## If submit button is clicked
 
