@@ -9,11 +9,6 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
-#st.write(
-#    "Has environment variables been set:",
-#os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
-#)
-
 # Sidebar contents
 with st.sidebar:
     st.title('Aesthetics Enhancer 🏡')
@@ -22,9 +17,9 @@ with st.sidebar:
             width = 250
         )
     st.markdown('''
-    Do you want to enhance your living space with new colours and desgins?
+    Do you want to enhance your living space with new colours and designs?
                                 
-    Just upload an image of your room and gain great ideas to improve your space to a comfy cosy living space with just one click. 
+    Just upload an image of your room and ask your questions to gain great ideas to have a comfy cosy living space with just one click. 
     
     This is an LLM-powered application built using Google generativeai:
     - [Google Generative AI](https://ai.google/discover/generativeai/)
@@ -61,6 +56,8 @@ def input_image_setup(uploaded_file):
 st.header("Aesthetics Enhancer App")
 
 input=st.text_input("Enter your question here: ",key="input")
+st.write('Example Questions : Can I paint my wall Ivory?, Will plants enhance my living space?')
+
 uploaded_file = st.file_uploader("Upload an image and click submit..", type=["jpg", "jpeg", "png"])
 image=""   
 if uploaded_file is not None:
@@ -68,11 +65,12 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image.", use_column_width=True)
 
 submit=st.button("Submit")
+st.write('Note : The Streamlit is an open-source software which collects user data for summary statistics. ')
 
 input_prompt="""
 You are an expert in interior designing and aesthetics. 
 Take note what is the preference of the user is from the input text and 
-describe how the aesthetics in the image looks and
+describe how the interior designing and aesthetics in the image looks and
 what can be changed to enhance the living space in the house 
 of the image as per the user taste and expectations.
 """
