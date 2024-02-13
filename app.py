@@ -12,9 +12,10 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 # Sidebar contents
 with st.sidebar:
     st.title('Aesthetics Enhancer 🏡')
+    st.write('Made with ❤️ by Floriann (Jan-2024)')
     st.image(
             "https://hips.hearstapps.com/hmg-prod/images/cozy-living-room-white-1555546939.jpg",
-            width = 250
+            width = 200
         )
     st.markdown('''
     Do you want to enhance your living space with new colours and designs?
@@ -25,8 +26,6 @@ with st.sidebar:
     - [Google Generative AI](https://ai.google/discover/generativeai/)
 
     ''')
-    #add_vertical_space(1)
-    st.write('Made with ❤️ by Floriann (Jan-2024)')
     
 #function to load the google gemini pro vision api and get response
 def get_gem_response(input, image, prompt):
@@ -54,9 +53,7 @@ def input_image_setup(uploaded_file):
 ##initialize our streamlit app
 
 st.header("Aesthetics Enhancer App")
-
-input=st.text_input("Enter your question here: ",key="input")
-st.write('Example Questions : Can I paint my wall Ivory?, Will plants enhance my living space?')
+input=st.text_input("Enter your question here: Can I paint my wall Ivory? Will plants enhance my living space?",key="input")
 
 uploaded_file = st.file_uploader("Upload an image and click submit..", type=["jpg", "jpeg", "png"])
 image=""   
@@ -68,11 +65,9 @@ submit=st.button("Submit")
 st.write('Note : The Streamlit is an open-source software which collects user data for summary statistics. ')
 
 input_prompt="""
-Act as an expert in interior designing and aesthetics. 
-Take note of what the preference from input text is and 
-describe how the interior designing and aesthetics in the image looks and
-what can be changed to enhance the living space in the house to look more lively
-as per the user taste and expectations.
+Act as an expert in interior designing and aesthetics. Note down the preference from input text and 
+describe how the interior designing and aesthetics in the image looks and what can be changed to enhance 
+the living space in the house to look more lively as per the user taste and expectations.
 """
 ## If submit button is clicked
 
