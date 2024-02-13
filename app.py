@@ -9,10 +9,14 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
+headers = {
+    "authorization" : st.secrets["GOOGLE_API_KEY"],
+    "content-type" : "application/python"
+}
 
 #st.write(
 #    "Has environment variables been set:",
-os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
+#os.environ["GOOGLE_API_KEY"] == st.secrets["GOOGLE_API_KEY"]
 #)
 
 # Sidebar contents
