@@ -62,7 +62,6 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image.", use_column_width=True)
 
 submit=st.button("Submit")
-st.write('Note : The Streamlit is an open-source software which collects user data for summary statistics. ')
 
 input_prompt="""
 Act as an interior designing consultant having interior designer creativity, design skills, and attention to detail,
@@ -75,6 +74,7 @@ colour schemes, design concepts, furniture placement,and functionality to create
 3.
 ..
  """
+st.write('Note : Google Gen AI is an open-source LLM model which collects user data')
 ## If submit button is clicked
 
 if submit:
