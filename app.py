@@ -65,13 +65,12 @@ submit=st.button("Submit")
 st.write('Note : The Streamlit is an open-source software which collects user data for summary statistics. ')
 
 input_prompt="""
-Act as an interior designing client consultant having interior designer's creativity, design skills, and attention to detail and who hears the needs, preferences and budgets of the clients. 
-Assess the space in the image and describe the spaces functional, safe, and the beauty of the space.
-Describe something about the decorative items, such as colours, lighting, and materials in the image and asses whether it is a residential homes, commercial offices, retail stores, hospitality venues, or construction. 
-
-If there is a question in the input box, analyse the question as an interior designing client consultant and Space Planning consultant and answer the clients question.
-Keep in mind the factors such as design concepts , mood boards, colour schemes, and design concepts, traffic flow, furniture placement, and functionality to create practical and ergonomic designs.
-"""
+Act as an interior designing consultant having interior designer creativity, design skills, and attention to detail,
+Assess the space in the image and describe the beauty of the space such as colours, lighting, and materials in the image.
+Answer the client question from the input box as an interior designing client consultant of how the current space can be enhanced,
+Keeping in mind the factors such as interior design concepts, colour schemes, design concepts, furniture placement,
+and functionality to create a practical designs.
+ """
 ## If submit button is clicked
 
 if submit:
