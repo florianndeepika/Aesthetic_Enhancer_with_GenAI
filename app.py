@@ -67,9 +67,13 @@ st.write('Note : The Streamlit is an open-source software which collects user da
 input_prompt="""
 Act as an interior designing consultant having interior designer creativity, design skills, and attention to detail,
 Assess the space in the image and describe the beauty of the space such as colours, lighting, and materials in the image.
-Answer the client question from the input box as an interior designing client consultant of how the current space can be enhanced,
-Keeping in mind the factors such as interior design concepts, colour schemes, design concepts, furniture placement,
-and functionality to create a practical designs.
+Answer the client question from the input box as an interior designing client consultant.
+Additionally, provide some additional tips to enhgance the space by keeping in mind the factors such as interior design concepts, 
+colour schemes, design concepts, furniture placement,and functionality to create a practical design in the following format,
+1.
+2.
+3.
+..
  """
 ## If submit button is clicked
 
